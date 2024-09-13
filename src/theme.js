@@ -3,7 +3,7 @@ export const theme = {
     white: "#FFFFFF",
     whiteLilac: "#FBFBFE",
     black: "#252525",
-    ScienceBlue:"#0366D6",
-    SlateGray:"#6E7E91",
+    scienceBlue:"#0366D6",
+    slateGray:"#6E7E91",
   },
 };
