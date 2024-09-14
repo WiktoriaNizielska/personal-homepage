@@ -1,3 +1,13 @@
+import { Wrapper } from "./Container/styled";
+import { Section } from "./Section";
+
 export const PersonalHomepage = () => (
-  <div></div>
+  <Wrapper>
+    <Section
+      title="My skillset includes 🛠️">
+    </Section>
+    <Section
+      title="What I want to learn next 🚀">
+    </Section>
+  </Wrapper>
 );
