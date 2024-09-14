@@ -1,0 +1,37 @@
+export const skills = [
+  "React.js",
+  "Styled Components",
+  "React Hooks",
+  "Create React App",
+  "NPM",
+  "HTML",
+  "JavaScript",
+  "CSS: Flex box",
+  "CSS: Animations/Keyframes",
+  "CSS: Media Queries",
+  "CSS: Grid",
+  "Figma",
+  "Teamwork",
+  "Trello",
+  "React-Router",
+  "Redux",
+  "Redux (Toolkit)",
+  "Redux-Saga",
+  "Responsive Web Design",
+  "Markdown",
+  "Fetch, Axios",
+  "Immutability",
+  "Promise, Async/Await",
+  "Error handling",
+  "LocalStorage",
+  "Scrum",
+  "Git",
+  "GitHub: Pull requests and review",
+];
+
+export const toLearn = [
+  "next.js",
+  "tailwind CSS",
+  "vite",
+  "TypeScript"
+];
