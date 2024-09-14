@@ -1,8 +1,11 @@
-import { Header, List, Wrapper } from "./styled";
+import { Header, List, ListItem, Wrapper } from "./styled";
 
-export const Section = ({ title, list }) => (
+export const Section = ({ title, skills }) => (
   <Wrapper>
     <Header>{title}</Header>
-    <List>{list}</List>
+    <List>
+      {skills.map((skill) => (
+        <ListItem key={skill}>{skill}</ListItem>))}
+    </List>
   </Wrapper>
 );
