@@ -40,4 +40,5 @@ export const ListItem = styled.li`
 export const Dot = styled(DotIcon)`
   margin-right: 16px;
   height: auto;
+  color: #0366D6;
 `;
