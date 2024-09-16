@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as DotIcon } from '../../../images/circle.svg';
 
 export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
@@ -27,6 +28,16 @@ export const List = styled.ul`
   line-height: 25.2px;
   margin: 0;
   padding-top: 32px;
+  padding-left: 0;
+  grid-gap: 8px 32px;
 `;
 
-export const ListItem = styled.li``;
+export const ListItem = styled.li`
+  list-style: none;
+  color: #6E7E91;
+`;
+
+export const Dot = styled(DotIcon)`
+  margin-right: 16px;
+  height: auto;
+`;
