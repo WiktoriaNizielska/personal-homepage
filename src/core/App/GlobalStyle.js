@@ -10,7 +10,7 @@ html {
   }
 
   body {
-    background-color: ${({ theme }) => theme.colors.whiteLilac};
+    background-color: ${({ theme }) => theme.background.main};
     font-family: "Inter", sans-serif;
     margin: 0 auto;
   }

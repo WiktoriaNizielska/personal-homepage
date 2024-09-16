@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { ReactComponent as DotIcon } from '../../../images/circle.svg';
 
 export const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.white};
-  box-shadow: 0px 16px 58px 0px #090A3308;
+  background-color: ${({ theme }) => theme.background.section};
+  box-shadow: ${({ theme }) => theme.shadow};
   margin: auto;
   max-width: 1216px;
   padding: 32px;
@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 export const Header = styled.h2`
   font-weight: 900;
   font-size: 30px;
-  border-bottom: 1px solid #D1D5DA4D;
+  border-bottom: 1px solid ${({ theme }) => theme.divider};
   margin: 0;
   max-width: 1151px;
   padding-bottom: 13px;
@@ -34,11 +34,11 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   list-style: none;
-  color: #6E7E91;
+  color: ${({ theme }) => theme.text.grey};
 `;
 
 export const Dot = styled(DotIcon)`
   margin-right: 16px;
   height: auto;
-  color: #0366D6;
+  color:${({ theme }) => theme.text.blue};
 `;

@@ -1,11 +1,11 @@
 import { ThemeProvider } from "styled-components";
-import { theme } from "./theme";
+import { lightTheme } from "./theme";
 import { GlobalStyle } from "./GlobalStyle";
 import { PersonalHomepage } from "../../features/PersonalHomepage";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={lightTheme}>
       <GlobalStyle />
       <PersonalHomepage />
     </ThemeProvider>
