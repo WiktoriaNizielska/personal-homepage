@@ -7,6 +7,7 @@ const colorNames = {
   darkGrey: "#363636B8",
   dodgerBlue: "#2188FF",
   mercury: "#E5E5E5",
+  iron: "#D1D5DA4D",
 };
 
 const breakpoints = {
@@ -31,6 +32,7 @@ export const lightTheme = {
   },
   divider: colorNames.mercury,
   shadow: boxShadow.lightShadow,
+  border: colorNames.iron,
 };
 
 export const darkTheme = {
