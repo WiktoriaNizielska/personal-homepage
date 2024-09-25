@@ -1,4 +1,4 @@
-import { Description, Title, Button, Caption, Wrapper } from "./styled";
+import { Description, Title, Button, Caption, Wrapper, Envelope } from "./styled";
 
 export const Text = () => (
   <Wrapper>
@@ -7,6 +7,9 @@ export const Text = () => (
     <Description>
       👨🏻‍💻  I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.
     </Description>
-    <Button>Hire Me</Button>
+    <Button href="mailto: wiktorianizielska@gmail.com">
+      <Envelope />
+      Hire Me
+    </Button>
   </Wrapper>
 );

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as EnvelopeIcon } from '../../../../images/envelope.svg';
 
 export const Wrapper = styled.div`
   max-width: 633px;
@@ -27,11 +28,25 @@ export const Description = styled.p`
   color: ${({ theme }) => theme.text.grey};
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   color: ${({ theme }) => theme.background.section};
   background-color: ${({ theme }) => theme.text.blue};
   border-radius: 4px;
   border: 1px solid  ${({ theme }) => theme.border}; 
   padding: 12px 16px;
   letter-spacing: 2px;
+  text-decoration: none;
+
+  &:hover{
+    box-shadow: 0px 0px 0px 2px #8CC2FF;
+  }
+
+  &:active{
+    box-shadow: 0px 2px 0px 0px #14462033 inset;
+  }
+`;
+
+export const Envelope = styled(EnvelopeIcon)`
+  color: ${({ theme }) => theme.background.section};
+  margin-right: 10px;
 `;
