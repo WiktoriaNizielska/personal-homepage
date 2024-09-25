@@ -1,9 +1,11 @@
 import { Wrapper } from "./Container/styled";
 import { skills, toLearn } from "./data/data";
+import { Header } from "./Header";
 import { Section } from "./Section";
 
 export const PersonalHomepage = () => (
   <Wrapper>
+    <Header />
     <Section
       title="My skillset includes 🛠️"
       skills={skills}
