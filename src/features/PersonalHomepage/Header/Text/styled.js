@@ -10,6 +10,7 @@ export const Caption = styled.p`
   font-size: 12px;
   line-height: 15.6px;
   color: ${({ theme }) => theme.text.grey};
+  margin-bottom: 12px;
 `;
 
 export const Title = styled.h1`
@@ -18,6 +19,8 @@ export const Title = styled.h1`
   line-height: 45.99px;
   color: ${({ theme }) => theme.text.black};
   letter-spacing: 2px;
+  margin-bottom: 35px;
+  margin-top: 0;
 `;
 
 export const Description = styled.p`
@@ -26,6 +29,7 @@ export const Description = styled.p`
   line-height: 28px;
   letter-spacing: 1px;
   color: ${({ theme }) => theme.text.grey};
+  margin-bottom: 32px;
 `;
 
 export const Button = styled.a`
@@ -36,6 +40,7 @@ export const Button = styled.a`
   padding: 12px 16px;
   letter-spacing: 2px;
   text-decoration: none;
+  display: inline-block;
 
   &:hover{
     box-shadow: 0px 0px 0px 2px #8CC2FF;
