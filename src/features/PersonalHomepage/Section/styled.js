@@ -41,4 +41,6 @@ export const Dot = styled(DotIcon)`
   margin-right: 16px;
   height: auto;
   color:${({ theme }) => theme.text.blue};
+  width: 9px;
+  height: 9px;
 `;
