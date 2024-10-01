@@ -26,6 +26,6 @@ export const {
   fetchProjectsError
 } = portfolioSlice.actions;
 
-export const selectProjectsState = state => state.projects;
+export const selectProjectsState = state => state.portfolio;
 
 export default portfolioSlice.reducer;
