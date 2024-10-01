@@ -1,9 +1,24 @@
+import { useDispatch, useSelector } from "react-redux";
 import { Header } from "./Header";
 import { Projects } from "./Projects";
+import { fetchProjects, selectProjectsState } from "./Projects/portfolioSlice";
+import { useEffect } from "react";
 
-export const Portfolio = () => (
-  <>
-    <Header></Header>
-    <Projects></Projects>
-  </>
-);
+export const Portfolio = () => {
+  const dispatch = useDispatch();
+  const { loading, error, projects } = useSelector(selectProjectsState);
+
+  useEffect(() => {
+    dispatch(fetchProjects());
+  }, [dispatch]);
+
+  return (
+    <>
+      <Header></Header>
+      {loading ? "l" :
+        error ? "e" :
+          <Projects>{projects}</Projects>
+      }
+    </>
+  )
+};
