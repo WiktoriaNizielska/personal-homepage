@@ -5,10 +5,26 @@ export const Projects = ({ title, description, demoLink, codeLink }) => (
     <ProjectTitle>{title}</ProjectTitle>
     <Description>{description}</Description>
     <LinkContainer>
-      <LinkTitle>Demo:</LinkTitle>
-      <Link>{demoLink}</Link>
-      <LinkTitle>Code:</LinkTitle>
-      <Link>{codeLink}</Link>
+      <LinkTitle>
+        Demo:
+      </LinkTitle>
+      <Link
+        href={demoLink}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        {demoLink}
+      </Link>
+      <LinkTitle>
+        Code:
+      </LinkTitle>
+      <Link
+        href={codeLink}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        {codeLink}
+      </Link>
     </LinkContainer>
   </Tile>
 );
