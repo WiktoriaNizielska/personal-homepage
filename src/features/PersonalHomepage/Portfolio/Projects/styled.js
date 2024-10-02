@@ -4,6 +4,9 @@ export const Tile = styled.div`
   max-width: 592px;
   border: 6px solid ${({ theme }) => theme.border};
   padding: 56px;
+  border-radius: 4px;
+  background-color: ${({ theme }) => theme.background.section};
+  box-shadow: ${({ theme }) => theme.shadow};
 `;
 
 export const ProjectTitle = styled.h3`
@@ -12,6 +15,7 @@ export const ProjectTitle = styled.h3`
   line-height: 29.05px;
   color:${({ theme }) => theme.text.blue};
   margin-top: 0;
+  text-transform: capitalize;
 `;
 
 export const Description = styled.p`
@@ -19,6 +23,8 @@ export const Description = styled.p`
   font-size: 18px;
   line-height: 25.2px;
   color:${({ theme }) => theme.text.grey};
+  margin: 24px 0;
+  text-align: justify;
 `;
 
 export const LinkContainer = styled.div`
@@ -40,5 +46,5 @@ export const Link = styled.a`
   font-size: 18px;
   line-height: 25.2px;
   color:${({ theme }) => theme.text.blue};
-  text-decoration: none;
+  text-decoration-color: ${({ theme }) => theme.underline};
 `;
