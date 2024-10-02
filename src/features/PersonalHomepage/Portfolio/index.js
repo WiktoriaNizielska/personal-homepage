@@ -4,6 +4,7 @@ import { Projects } from "./Projects";
 import { fetchProjects, selectProjectsState } from "./Projects/portfolioSlice";
 import { useEffect } from "react";
 import { Wrapper } from "./styled";
+import { Loading } from "./Projects/Loading";
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ export const Portfolio = () => {
   return (
     <>
       <Header></Header>
-      {loading ? "l" :
+      {loading ? <Loading /> :
         error ? "e" :
           <Wrapper>
             {projects.map(project => (<Projects
