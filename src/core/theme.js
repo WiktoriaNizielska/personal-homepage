@@ -16,7 +16,7 @@ const breakpoints = {
 };
 
 const boxShadow = {
-  lightShadow: "0px 16px 58px 0px #090A3308",
+  lightShadow: "0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305",
   darkShadow: "",
 };
 
