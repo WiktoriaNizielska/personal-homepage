@@ -3,6 +3,7 @@ const colorNames = {
   white: "#FFFFFF",
   mineShaft: "#252525",
   scienceBlue: "#0366D6",
+  transparentBlue: "#0367d833",
   slateGray: "#6E7E91",
   darkGrey: "#363636B8",
   dodgerBlue: "#2188FF",
@@ -33,6 +34,7 @@ export const lightTheme = {
   divider: colorNames.mercury,
   shadow: boxShadow.lightShadow,
   border: colorNames.iron,
+  underline: colorNames.transparentBlue,
 };
 
 export const darkTheme = {
