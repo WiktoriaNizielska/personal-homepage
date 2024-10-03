@@ -7,6 +7,11 @@ export const Tile = styled.div`
   border-radius: 4px;
   background-color: ${({ theme }) => theme.background.section};
   box-shadow: ${({ theme }) => theme.shadow};
+  transition: 0.5s;
+
+  &:hover{
+    border: 6px solid #0366D633;
+  }
 `;
 
 export const ProjectTitle = styled.h3`
@@ -31,7 +36,6 @@ export const LinkContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 8px;
-  
 `;
 
 export const LinkTitle = styled.span`
