@@ -47,4 +47,9 @@ export const Link = styled.a`
   line-height: 25.2px;
   color:${({ theme }) => theme.text.blue};
   text-decoration-color: ${({ theme }) => theme.underline};
+  transition: 0.5s;
+
+  &:hover{
+    text-decoration-color: ${({ theme }) => theme.text.blue};
+  }
 `;
