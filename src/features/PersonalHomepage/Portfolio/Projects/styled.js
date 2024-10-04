@@ -27,7 +27,7 @@ export const Description = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 25.2px;
-  color:${({ theme }) => theme.text.grey};
+  color:${({ theme }) => theme.text.paragraph};
   margin: 24px 0;
   text-align: justify;
 `;
@@ -42,7 +42,7 @@ export const LinkTitle = styled.span`
   font-weight: 400;
   font-size: 18px;
   line-height: 25.2px;
-  color:${({ theme }) => theme.text.grey};
+  color:${({ theme }) => theme.text.paragraph};
 `;
 
 export const Link = styled.a`

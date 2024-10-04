@@ -9,7 +9,7 @@ export const Caption = styled.p`
   font-weight: 700;
   font-size: 12px;
   line-height: 15.6px;
-  color: ${({ theme }) => theme.text.grey};
+  color: ${({ theme }) => theme.text.paragraph};
   margin-bottom: 12px;
 `;
 
@@ -17,7 +17,7 @@ export const Title = styled.h1`
   font-weight: 900;
   font-size: 38px;
   line-height: 45.99px;
-  color: ${({ theme }) => theme.text.black};
+  color: ${({ theme }) => theme.text.header};
   letter-spacing: 2px;
   margin-bottom: 35px;
   margin-top: 0;
@@ -28,7 +28,7 @@ export const Description = styled.p`
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 1px;
-  color: ${({ theme }) => theme.text.grey};
+  color: ${({ theme }) => theme.text.paragraph};
   margin-bottom: 32px;
 `;
 

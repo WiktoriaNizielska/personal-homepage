@@ -12,7 +12,7 @@ export const Header = styled.h3`
   font-weight: 700;
   font-size: 24px;
   line-height: 29.05px;
-  color: ${({ theme }) => theme.text.black};
+  color: ${({ theme }) => theme.text.header};
   margin: 16px 0 32px;
 `;
 
@@ -20,14 +20,14 @@ export const Message = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: ${({ theme }) => theme.text.black};
+  color: ${({ theme }) => theme.text.header};
   margin: 0;
 `;
 
 export const DangerSign = styled(DangerIcon)`
   width: 37px;
   height: 33.34px;
-  color: ${({ theme }) => theme.text.black};
+  color: ${({ theme }) => theme.text.header};
 `;
 
 export const Button = styled.a`

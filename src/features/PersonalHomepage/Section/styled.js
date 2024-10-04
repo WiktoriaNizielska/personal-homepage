@@ -17,6 +17,7 @@ export const Header = styled.h2`
   margin: 0;
   max-width: 1151px;
   padding-bottom: 13px;
+  color: ${({ theme }) => theme.text.header};
 `;
 
 export const List = styled.ul`
@@ -34,7 +35,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   list-style: none;
-  color: ${({ theme }) => theme.text.grey};
+  color: ${({ theme }) => theme.text.paragraph};
 `;
 
 export const Dot = styled(DotIcon)`

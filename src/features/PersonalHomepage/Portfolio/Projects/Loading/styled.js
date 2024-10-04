@@ -11,7 +11,7 @@ export const Text = styled.p`
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color:${({ theme }) => theme.text.black};
+  color:${({ theme }) => theme.text.header};
   margin: 88px 0 48px ;
 `;
 
