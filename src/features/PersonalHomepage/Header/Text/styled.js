@@ -33,25 +33,25 @@ export const Description = styled.p`
 `;
 
 export const Button = styled.a`
-  color: ${({ theme }) => theme.background.section};
-  background-color: ${({ theme }) => theme.text.blue};
+  color: ${({ theme }) => theme.button.text};
+  background-color: ${({ theme }) => theme.button.background};
   border-radius: 4px;
-  border: 1px solid  ${({ theme }) => theme.border}; 
+  border: 1px solid  ${({ theme }) => theme.button.border}; 
   padding: 12px 16px;
   letter-spacing: 2px;
   text-decoration: none;
   display: inline-block;
 
   &:hover{
-    box-shadow: 0px 0px 0px 2px #8CC2FF;
+    box-shadow: ${({ theme }) => theme.button.hoverShadow};
   }
 
   &:active{
-    box-shadow: 0px 2px 0px 0px #14462033 inset;
+    box-shadow: ${({ theme }) => theme.button.activeShadow};
   }
 `;
 
 export const Envelope = styled(EnvelopeIcon)`
-  color: ${({ theme }) => theme.background.section};
+  color: ${({ theme }) => theme.button.text};
   margin-right: 10px;
 `;
