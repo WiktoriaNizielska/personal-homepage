@@ -9,6 +9,9 @@ const colorNames = {
   dodgerBlue: "#2188FF",
   mercury: "#E5E5E5",
   iron: "#D1D5DA4D",
+  iron10: "#D1D5DA1A",
+  lightBlue: "#0366D633",
+  darkBlue: "#0366D680",
 };
 
 const breakpoints = {
@@ -16,8 +19,13 @@ const breakpoints = {
 };
 
 const boxShadow = {
-  lightShadow: "0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305",
-  darkShadow: "",
+  shadow: "0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305",
+  button: {
+    lightHover: " -2px -2px 0px 0px #8CC2FF, 2px 2px 0px 0px #8CC2FF, -2px 2px 0px 0px #8CC2FF, 2px -2px 0px 0px #8CC2FF",
+    lightActive: " 0px 2px 0px 0px #14462033 inset",
+    darkHover: "-2px -2px 0px 0px #6D93BE, 2px 2px 0px 0px #6D93BE, -2px 2px 0px 0px #6D93BE, 2px -2px 0px 0px #6D93BE",
+    darkActive: "0px 2px 0px 0px #14462033 inset",
+  }
 };
 
 export const lightTheme = {
@@ -27,14 +35,31 @@ export const lightTheme = {
     section: colorNames.white,
   },
   text: {
-    black: colorNames.mineShaft,
-    grey: colorNames.slateGray,
+    header: colorNames.mineShaft,
+    paragraph: colorNames.slateGray,
     blue: colorNames.scienceBlue,
   },
   divider: colorNames.mercury,
-  shadow: boxShadow.lightShadow,
-  border: colorNames.iron,
-  underline: colorNames.transparentBlue,
+  shadow: boxShadow.shadow,
+  button: {
+    background: colorNames.scienceBlue,
+    text: colorNames.white,
+    border: colorNames.iron,
+    hoverborder: colorNames.iron,
+    hovershadow: boxShadow.button.lightHover,
+    activeBorder: colorNames.iron,
+    activeShadow: boxShadow.button.lightActive,
+  },
+  tile: {
+    background: colorNames.white,
+    border: colorNames.iron,
+    header: colorNames.scienceBlue,
+    description: colorNames.slateGray,
+    linkTitle: colorNames.slateGray,
+    link: colorNames.scienceBlue,
+    underline: colorNames.transparentBlue,
+    hover: colorNames.lightBlue,
+  },
 };
 
 export const darkTheme = {
@@ -44,8 +69,28 @@ export const darkTheme = {
     section: colorNames.darkGrey,
   },
   text: {
-    white: colorNames.white,
+    header: colorNames.white,
+    paragraph: colorNames.white,
     blue: colorNames.dodgerBlue,
   },
-  divider: colorNames.mercury,
+  divider: colorNames.iron10,
+  shadow: boxShadow.shadow,
+  button: {
+    background: colorNames.dodgerBlue,
+    text: colorNames.white,
+    border: colorNames.iron10,
+    hoverborder: colorNames.iron,
+    hoverShadow: boxShadow.button.darkHover,
+    activeBorder: colorNames.iron,
+    activeShadow: boxShadow.button.darkActive,
+  },
+  tile: {
+    background: colorNames.darkGrey,
+    border: colorNames.iron10,
+    header: colorNames.white,
+    description: colorNames.white,
+    linkTitle: colorNames.white,
+    link: colorNames.dodgerBlue,
+    hover: colorNames.darkBlue,
+  },
 };
