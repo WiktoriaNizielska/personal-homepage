@@ -4,9 +4,11 @@ import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Portfolio } from "./Portfolio";
 import { Section } from "./Section";
+import { ThemeButton } from "./ThemeButton";
 
 export const PersonalHomepage = () => (
   <Wrapper>
+    <ThemeButton/>
     <Header />
     <Section
       title="My skillset includes 🛠️"
