@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as SunIcon } from '../../../images/sun.svg';
 
 export const Wrapper = styled.div`
@@ -9,13 +9,14 @@ export const Wrapper = styled.div`
 `;
 
 export const Text = styled.p`
- font-size: 12px;
- font-weight: 700;
- line-height: 15.6px;
- color: ${({ theme }) => theme.text.paragraph};
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.6px;
+  color: ${({ theme }) => theme.text.paragraph};
 `;
 
 export const Button = styled.button`
+  position: relative;
   width: 48px;
   height: 26px;
   border-radius: 14px;
@@ -27,18 +28,25 @@ export const Button = styled.button`
 `;
 
 export const Dot = styled.div`
+  position: absolute;
+  top: 1;
+  left: 2px;
   width: 20px;
   height: 20px;
   background-color: ${({ theme }) => theme.text.paragraph};
-  border-radius: 14px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+ 
+
+  ${({ $dark }) => $dark && css`
+        left: 24px;
+    `}
 `;
 
 export const Sun = styled(SunIcon)`
   width: 14px;
   height: 14px;
   color: ${({ theme }) => theme.sun};
-  transform: rotate(180deg);
 `;

@@ -10,7 +10,7 @@ export const ThemeButton = () => {
     <Wrapper>
       <Text>DARK MODE {darkMode ? "ON" : "OFF"}</Text>
       <Button onClick={() => dispatch(toggleTheme())}>
-        <Dot>
+        <Dot $dark={darkMode}>
           <Sun></Sun>
         </Dot>
       </Button>
