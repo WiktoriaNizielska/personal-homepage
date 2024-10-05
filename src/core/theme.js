@@ -59,6 +59,7 @@ export const lightTheme = {
     link: colorNames.scienceBlue,
     underline: colorNames.transparentBlue,
     hover: colorNames.lightBlue,
+    linkHover: colorNames.scienceBlue,
   },
 };
 
@@ -91,6 +92,8 @@ export const darkTheme = {
     description: colorNames.white,
     linkTitle: colorNames.white,
     link: colorNames.dodgerBlue,
+    underline: colorNames.dodgerBlue,
     hover: colorNames.darkBlue,
+    linkHover: colorNames.transparentBlue,
   },
 };
