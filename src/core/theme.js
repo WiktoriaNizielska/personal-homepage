@@ -61,6 +61,11 @@ export const lightTheme = {
     hover: colorNames.lightBlue,
     linkHover: colorNames.scienceBlue,
   },
+  themeButton: {
+    background: colorNames.mercury,
+    border: colorNames.iron,
+  },
+  sun: colorNames.white,
 };
 
 export const darkTheme = {
@@ -96,4 +101,9 @@ export const darkTheme = {
     hover: colorNames.darkBlue,
     linkHover: colorNames.transparentBlue,
   },
+  themeButton: {
+    background: colorNames.darkGrey,
+    border: colorNames.white,
+  },
+  sun: colorNames.mineShaft,
 };
