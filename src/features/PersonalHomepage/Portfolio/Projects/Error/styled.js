@@ -33,14 +33,22 @@ export const DangerSign = styled(DangerIcon)`
 export const Button = styled.a`
   display: inline-block;
   margin: 32px 0 140px;
-  background-color: ${({ theme }) => theme.text.blue};
+  background-color: ${({ theme }) => theme.button.background};
   padding: 12px 16px;
   border-radius: 4px;
-  border: 1px solid ${({ theme }) => theme.border};
+  border: 1px solid ${({ theme }) => theme.button.border};
   text-decoration: none;
-  color: ${({ theme }) => theme.background.section};
+  color: ${({ theme }) => theme.button.text};
   font-weight: 600;
   font-size: 20.06px;
   line-height: 24.28px;
   letter-spacing: 1px;
+
+  &:hover{
+    box-shadow: ${({ theme }) => theme.button.hoverShadow};
+  }
+
+  &:active{
+    box-shadow: ${({ theme }) => theme.button.activeShadow};
+  }
 `;
