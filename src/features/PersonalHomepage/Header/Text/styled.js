@@ -41,6 +41,7 @@ export const Button = styled.a`
   letter-spacing: 2px;
   text-decoration: none;
   display: inline-block;
+  transition: 0.5s;
 
   &:hover{
     box-shadow: ${({ theme }) => theme.button.hoverShadow};

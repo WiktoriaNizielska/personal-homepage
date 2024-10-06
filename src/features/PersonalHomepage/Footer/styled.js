@@ -18,6 +18,7 @@ export const Email = styled.a`
   line-height: 38.73px;
   color: ${({ theme }) => theme.text.header};
   text-decoration: none;
+  transition: 0.5s;
 
   &:hover{
         color: ${({ theme }) => theme.text.blue};

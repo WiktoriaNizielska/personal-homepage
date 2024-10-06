@@ -43,6 +43,7 @@ export const Button = styled.a`
   font-size: 20.06px;
   line-height: 24.28px;
   letter-spacing: 1px;
+  transition: 0.5s;
 
   &:hover{
     box-shadow: ${({ theme }) => theme.button.hoverShadow};
