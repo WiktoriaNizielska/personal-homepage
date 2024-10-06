@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ReactComponent as GitHubIcon } from '../../../images/github.svg';
+
 
 export const Wrapper = styled.div`
   max-width: 691px;
@@ -30,4 +32,18 @@ export const Description = styled.p`
   font-size: 18px;
   line-height: 25.2px;
   color: ${({ theme }) => theme.text.header};
+  margin-bottom: 56px;
+`;
+
+export const Link = styled.a``;
+
+export const GitHub = styled(GitHubIcon)`
+  width: 48px;
+  height: 48px;
+  color:  ${({ theme }) => theme.text.header};
+  transition: 0.5s;
+
+  &:hover{
+        color: ${({ theme }) => theme.text.blue};
+    }
 `;
