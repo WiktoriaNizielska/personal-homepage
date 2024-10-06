@@ -12,6 +12,7 @@ export const Caption = styled.p`
   font-size: 12px;
   line-height: 15.6px;
   color: ${({ theme }) => theme.text.paragraph};
+  margin: 0 0 24px;
 `;
 
 export const Email = styled.a`
@@ -32,7 +33,7 @@ export const Description = styled.p`
   font-size: 18px;
   line-height: 25.2px;
   color: ${({ theme }) => theme.text.header};
-  margin-bottom: 56px;
+  margin:24px 0 56px;
 `;
 
 export const Link = styled.a``;
