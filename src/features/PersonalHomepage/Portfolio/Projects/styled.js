@@ -52,6 +52,8 @@ export const Link = styled.a`
   color:${({ theme }) => theme.tile.link};
   text-decoration-color: ${({ theme }) => theme.tile.underline};
   transition: 0.5s;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   &:hover{
     text-decoration-color: ${({ theme }) => theme.tile.linkHover};
