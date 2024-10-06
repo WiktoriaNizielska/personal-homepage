@@ -38,10 +38,11 @@ export const Dot = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
  
-
   ${({ $dark }) => $dark && css`
         left: 24px;
+        transform: rotate(360deg);
     `}
 `;
 
