@@ -54,5 +54,5 @@ export const Button = styled.a`
 
 export const Envelope = styled(EnvelopeIcon)`
   color: ${({ theme }) => theme.button.text};
-  margin-right: 10px;
+  margin-right: 16px;
 `;
