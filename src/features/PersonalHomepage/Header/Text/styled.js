@@ -40,7 +40,9 @@ export const Button = styled.a`
   padding: 12px 16px;
   letter-spacing: 2px;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
   transition: 0.5s;
 
   &:hover{
@@ -54,5 +56,6 @@ export const Button = styled.a`
 
 export const Envelope = styled(EnvelopeIcon)`
   color: ${({ theme }) => theme.button.text};
-  margin-right: 16px;
+  width: 24px;
+  height: 24px;
 `;
