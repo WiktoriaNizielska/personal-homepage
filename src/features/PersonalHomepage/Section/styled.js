@@ -36,12 +36,13 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   list-style: none;
   color: ${({ theme }) => theme.text.paragraph};
+  display: flex;
 `;
 
 export const Dot = styled(DotIcon)`
-  margin-right: 16px;
-  height: auto;
   color:${({ theme }) => theme.text.blue};
   width: 9px;
   height: 9px;
+  margin-right: 16px;
+  align-self: center;
 `;
