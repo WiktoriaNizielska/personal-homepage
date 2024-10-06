@@ -54,6 +54,7 @@ export const Link = styled.a`
   transition: 0.5s;
   overflow: hidden;
   text-overflow: ellipsis;
+  letter-spacing: 1px;
 
   &:hover{
     text-decoration-color: ${({ theme }) => theme.tile.linkHover};
