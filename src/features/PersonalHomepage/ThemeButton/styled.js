@@ -25,6 +25,7 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  cursor: pointer;
 `;
 
 export const Dot = styled.div`
