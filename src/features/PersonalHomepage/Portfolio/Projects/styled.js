@@ -12,6 +12,14 @@ export const Tile = styled.div`
   &:hover{
     border: 6px solid ${({ theme }) => theme.tile.hover};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}) {
+    max-width: 991px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    padding: 24px;
+  }
 `;
 
 export const ProjectTitle = styled.h3`
@@ -21,6 +29,11 @@ export const ProjectTitle = styled.h3`
   color:${({ theme }) => theme.tile.header};
   margin-top: 0;
   text-transform: capitalize;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
 `;
 
 export const Description = styled.p`
@@ -30,6 +43,12 @@ export const Description = styled.p`
   color:${({ theme }) => theme.tile.description};
   margin: 24px 0;
   text-align: justify;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 14px;
+    line-height: 16.94px;
+    margin: 16px 0;
+  }
 `;
 
 export const LinkContainer = styled.div`
@@ -43,6 +62,11 @@ export const LinkTitle = styled.span`
   font-size: 18px;
   line-height: 25.2px;
   color:${({ theme }) => theme.tile.linkTitle};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 14px;
+    line-height: 16.94px;
+  }
 `;
 
 export const Link = styled.a`
@@ -52,11 +76,15 @@ export const Link = styled.a`
   color:${({ theme }) => theme.tile.link};
   text-decoration-color: ${({ theme }) => theme.tile.underline};
   transition: 0.5s;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-break: break-word;
   letter-spacing: 1px;
 
   &:hover{
     text-decoration-color: ${({ theme }) => theme.tile.linkHover};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 14px;
+    line-height: 16.94px;
   }
 `;

@@ -8,6 +8,10 @@ export const Wrapper = styled.div`
   max-width: 1216px;
   padding: 32px;
   margin-bottom: 72px;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    padding: 16px;
+  }
 `;
 
 export const Header = styled.h2`
@@ -18,6 +22,11 @@ export const Header = styled.h2`
   max-width: 1151px;
   padding-bottom: 13px;
   color: ${({ theme }) => theme.text.header};
+  letter-spacing: 1px;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 18px;
+  }
 `;
 
 export const List = styled.ul`
@@ -31,6 +40,18 @@ export const List = styled.ul`
   padding-top: 32px;
   padding-left: 0;
   grid-gap: 8px 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 16.94px;
+    padding-top: 12px;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -45,4 +66,10 @@ export const Dot = styled(DotIcon)`
   height: 9px;
   margin-right: 16px;
   align-self: center;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    width: 6px;
+    height: 6px;
+    margin-right: 8px;
+  }
 `;

@@ -3,6 +3,10 @@ import { ReactComponent as EnvelopeIcon } from '../../../../images/envelope.svg'
 
 export const Wrapper = styled.div`
   max-width: 633px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    max-width: 991px;
+  }
 `;
 
 export const Caption = styled.p`
@@ -21,6 +25,12 @@ export const Title = styled.h1`
   letter-spacing: 2px;
   margin-bottom: 35px;
   margin-top: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 22px;
+    line-height: 26.63px;
+    margin-bottom: 16px;
+  }
 `;
 
 export const Description = styled.p`
@@ -30,9 +40,17 @@ export const Description = styled.p`
   letter-spacing: 1px;
   color: ${({ theme }) => theme.text.paragraph};
   margin-bottom: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 17px;
+    line-height: 23.8px;
+  }
 `;
 
 export const Button = styled.a`
+  font-size: 20.06px;
+  font-weight: 600;
+  line-height: 24.28px;
   color: ${({ theme }) => theme.button.text};
   background-color: ${({ theme }) => theme.button.background};
   border-radius: 4px;
@@ -52,10 +70,21 @@ export const Button = styled.a`
   &:active{
     box-shadow: ${({ theme }) => theme.button.activeShadow};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    gap: 12px;
+    font-size: 18px;
+    line-height: 21.78px;
+  }
 `;
 
 export const Envelope = styled(EnvelopeIcon)`
   color: ${({ theme }) => theme.button.text};
   width: 24px;
   height: 24px;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    width: 20px;
+    height: 20px;
+  }
 `;

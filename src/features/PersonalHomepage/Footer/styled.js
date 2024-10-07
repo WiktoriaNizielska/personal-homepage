@@ -5,6 +5,10 @@ import { ReactComponent as GitHubIcon } from '../../../images/github.svg';
 export const Wrapper = styled.div`
   max-width: 691px;
   margin-top: 120px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    margin-top: 48px;
+  }
 `;
 
 export const Caption = styled.p`
@@ -13,6 +17,10 @@ export const Caption = styled.p`
   line-height: 15.6px;
   color: ${({ theme }) => theme.text.paragraph};
   margin: 0 0 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    margin: 0 0 12px;
+  }
 `;
 
 export const Email = styled.a`
@@ -24,8 +32,13 @@ export const Email = styled.a`
   transition: 0.5s;
 
   &:hover{
-        color: ${({ theme }) => theme.text.blue};
+      color: ${({ theme }) => theme.text.blue};
     }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 18px;
+    line-height: 21.78px;
+  }
 `;
 
 export const Description = styled.p`
@@ -33,7 +46,13 @@ export const Description = styled.p`
   font-size: 18px;
   line-height: 25.2px;
   color: ${({ theme }) => theme.text.header};
-  margin:24px 0 56px;
+  margin: 24px 0 56px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 14px;
+    line-height: 16.94px;
+    margin:12px 0 40px;
+  }
 `;
 
 export const Link = styled.a``;
@@ -47,4 +66,9 @@ export const GitHub = styled(GitHubIcon)`
   &:hover{
         color: ${({ theme }) => theme.text.blue};
     }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    width: 32px;
+    height: 32px;
+  }
 `;

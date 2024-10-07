@@ -13,5 +13,9 @@ html {
     background-color: ${({ theme }) => theme.background.main};
     font-family: "Inter", sans-serif;
     margin: 14px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}) {
+      margin: 18px;
+    }
   }
 `;

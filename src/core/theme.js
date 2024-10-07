@@ -4,7 +4,7 @@ const colorNames = {
   mineShaft: "#252525",
   scienceBlue: "#0366D6",
   transparentBlue: "#0367d833",
-  tranparentDarkBlue:"#2189ff44",
+  tranparentDarkBlue: "#2189ff44",
   slateGray: "#6E7E91",
   darkGrey: "#363636B8",
   dodgerBlue: "#2188FF",
@@ -17,7 +17,10 @@ const colorNames = {
 };
 
 const breakpoints = {
-  mobile: "767px",
+  breakpoint: {
+    tabletMax: "991px",
+    mobileMax: "767px",
+  }
 };
 
 const boxShadow = {
