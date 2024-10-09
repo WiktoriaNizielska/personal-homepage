@@ -7,7 +7,7 @@ export const Footer = () => (
       wiktorianizielska@gmail.com
     </Email>
     <Description>
-      I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to contact me 🤞
+      I'm always open to new projects. If you need a creative developer who can build responsive design websites and apps, feel free to contact me. Your ideas will come to life. 👋
     </Description>
     <Link
       href="https://github.com/WiktoriaNizielska"
