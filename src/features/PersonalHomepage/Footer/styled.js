@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as GitHubIcon } from '../../../images/github.svg';
+import { ReactComponent as LinkedinIcon } from '../../../images/linkedin.svg';
 
 
 export const Wrapper = styled.div`
@@ -55,9 +56,34 @@ export const Description = styled.p`
   }
 `;
 
+export const LinksContainer = styled.div`
+  display: flex;
+  gap: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    gap: 16px;
+  }
+`;
+
 export const Link = styled.a``;
 
 export const GitHub = styled(GitHubIcon)`
+  width: 48px;
+  height: 48px;
+  color:  ${({ theme }) => theme.text.header};
+  transition: 0.5s;
+
+  &:hover{
+        color: ${({ theme }) => theme.text.blue};
+    }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    width: 32px;
+    height: 32px;
+  }
+`;
+
+export const Linkedin = styled(LinkedinIcon)`
   width: 48px;
   height: 48px;
   color:  ${({ theme }) => theme.text.header};

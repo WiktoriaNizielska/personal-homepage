@@ -1,4 +1,4 @@
-import { Caption, Description, Email, GitHub, Link, Wrapper } from "./styled";
+import { Caption, Description, Email, GitHub, Link, Linkedin, LinksContainer, Wrapper } from "./styled";
 
 export const Footer = () => (
   <Wrapper>
@@ -9,11 +9,19 @@ export const Footer = () => (
     <Description>
       I'm always open to new projects. If you need a creative developer who can build responsive design websites and apps, feel free to contact me. Your ideas will come to life. 👋
     </Description>
-    <Link
-      href="https://github.com/WiktoriaNizielska"
-      target="_blank"
-      rel="noreferrer noopener">
-      <GitHub />
-    </Link>
+    <LinksContainer>
+      <Link
+        href="https://github.com/WiktoriaNizielska"
+        target="_blank"
+        rel="noreferrer noopener">
+        <GitHub />
+      </Link>
+      <Link
+        href="https://www.linkedin.com/in/wiktoria-nizielska-870633328/"
+        target="_blank"
+        rel="noreferrer noopener">
+        <Linkedin />
+      </Link>
+    </LinksContainer>
   </Wrapper>
 );
