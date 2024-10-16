@@ -13,6 +13,10 @@ export const Text = styled.p`
   font-weight: 700;
   line-height: 15.6px;
   color: ${({ theme }) => theme.text.paragraph};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+   display: none;
+  }
 `;
 
 export const Button = styled.button`
@@ -26,6 +30,7 @@ export const Button = styled.button`
   align-items: center;
   justify-content: flex-start;
   cursor: pointer;
+  outline-offset: 6px;
 `;
 
 export const Dot = styled.div`
