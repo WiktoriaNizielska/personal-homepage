@@ -1,4 +1,4 @@
-import { call, delay, put, takeEvery } from "redux-saga/effects";
+import { call, delay, put, takeLatest } from "redux-saga/effects";
 import { getRepositories } from "./getRepositories";
 import { fetchProjects, fetchProjectsError, fetchProjectsSuccess } from "./portfolioSlice";
 
@@ -13,5 +13,5 @@ function* fetchProjectsHandler() {
 }
 
 export function* portfolioSaga() {
-  yield takeEvery(fetchProjects.type, fetchProjectsHandler)
+  yield takeLatest(fetchProjects.type, fetchProjectsHandler)
 }
