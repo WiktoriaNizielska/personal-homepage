@@ -77,7 +77,7 @@ export const Link = styled.a`
   text-decoration-color: ${({ theme }) => theme.tile.underline};
   transition: 0.5s;
   word-break: break-word;
-  letter-spacing: 1px;
+  
 
   &:hover{
     text-decoration-color: ${({ theme }) => theme.tile.linkHover};

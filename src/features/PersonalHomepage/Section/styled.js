@@ -22,7 +22,6 @@ export const Header = styled.h2`
   max-width: 1151px;
   padding-bottom: 13px;
   color: ${({ theme }) => theme.text.header};
-  letter-spacing: 1px;
   
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     font-size: 18px;

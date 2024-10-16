@@ -22,7 +22,6 @@ export const Title = styled.h1`
   font-size: 38px;
   line-height: 45.99px;
   color: ${({ theme }) => theme.text.header};
-  letter-spacing: 2px;
   margin-bottom: 35px;
   margin-top: 0;
 
@@ -37,7 +36,6 @@ export const Description = styled.p`
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: 1px;
   color: ${({ theme }) => theme.text.paragraph};
   margin-bottom: 32px;
 
@@ -56,7 +54,6 @@ export const Button = styled.a`
   border-radius: 4px;
   border: 1px solid  ${({ theme }) => theme.button.border}; 
   padding: 12px 16px;
-  letter-spacing: 2px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;

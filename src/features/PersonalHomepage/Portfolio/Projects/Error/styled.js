@@ -42,7 +42,6 @@ export const Button = styled.a`
   font-weight: 600;
   font-size: 20.06px;
   line-height: 24.28px;
-  letter-spacing: 1px;
   transition: 0.5s;
 
   &:hover{
