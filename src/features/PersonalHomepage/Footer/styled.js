@@ -18,6 +18,7 @@ export const Caption = styled.h2`
   line-height: 15.6px;
   color: ${({ theme }) => theme.text.paragraph};
   margin: 0 0 24px;
+  letter-spacing: initial;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     margin: 0 0 12px;

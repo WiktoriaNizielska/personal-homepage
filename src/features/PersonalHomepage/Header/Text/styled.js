@@ -15,6 +15,7 @@ export const Caption = styled.p`
   line-height: 15.6px;
   color: ${({ theme }) => theme.text.paragraph};
   margin-bottom: 12px;
+  letter-spacing: initial;
 `;
 
 export const Title = styled.h1`
