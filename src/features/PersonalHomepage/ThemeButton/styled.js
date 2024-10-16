@@ -46,7 +46,7 @@ export const Dot = styled.div`
   justify-content: center;
   transition: 0.5s;
  
-  ${({ $dark }) => $dark && css`
+  ${({ $move }) => $move && css`
         left: 24px;
         transform: rotate(360deg);
     `}
