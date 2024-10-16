@@ -11,12 +11,14 @@ export const Footer = () => (
     </Description>
     <LinksContainer>
       <Link
+        title="GitHub"
         href="https://github.com/WiktoriaNizielska"
         target="_blank"
         rel="noreferrer noopener">
         <GitHub />
       </Link>
       <Link
+        title="Linkedin"
         href="https://www.linkedin.com/in/wiktoria-nizielska-870633328/"
         target="_blank"
         rel="noreferrer noopener">
