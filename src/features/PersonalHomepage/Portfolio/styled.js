@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Container = styled.section`
+  
+`;
+
 export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);

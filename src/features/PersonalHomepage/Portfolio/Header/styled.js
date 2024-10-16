@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as Github } from '../../../../images/github.svg';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.header`
   text-align: center;
 `;
 

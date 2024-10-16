@@ -3,7 +3,7 @@ import { ReactComponent as GitHubIcon } from '../../../images/github.svg';
 import { ReactComponent as LinkedinIcon } from '../../../images/linkedin.svg';
 
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.footer`
   max-width: 691px;
   margin-top: 120px;
 
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Caption = styled.p`
+export const Caption = styled.h2`
   font-weight: 700;
   font-size: 12px;
   line-height: 15.6px;

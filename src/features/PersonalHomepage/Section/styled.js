@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as DotIcon } from '../../../images/circle.svg';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.background.section};
   box-shadow: ${({ theme }) => theme.shadow};
   margin: auto;
