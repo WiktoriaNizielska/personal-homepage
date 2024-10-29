@@ -1,4 +1,4 @@
-# Personal Home
+# Personal Homepage
 
 ## Description
 Welcome to my virtual CV! Personal homepage is an interactive web application built with React. It showcases my skills and projects. 
@@ -13,6 +13,28 @@ Demo: https://wiktorianizielska.github.io/personal-homepage/
 - 📧 **Contact:** Section with social media links and email
 - 🖥️📱💻**Responsive design:** that works across all devices
 - 🌓**Theme switch:** you can choose light or dark mode
+
+## Technologies
+![Static Badge](https://img.shields.io/badge/REACT-%20?style=flat&logo=REACT&logoColor=white&color=%20%2361DBFB) ![Static Badge](https://img.shields.io/badge/REDUX-%20%20?style=flat&logo=redux&logoColor=white&color=%23764abc) ![Static Badge](https://img.shields.io/badge/REDUX--SAGA-%20%20?style=flat&logo=redux&logoColor=white&color=%23764abc) ![Static Badge](https://img.shields.io/badge/JAVASCRIPT-%20%20?style=flat&logo=JAVASCRIPT&logoColor=black&color=%23F0DB4F) ![Static Badge](https://img.shields.io/badge/STYLED--COMPONENTS-%20%20?style=flat&logo=styled-components&logoColor=white&logoSize=auto&color=%23DF728C) ![Static Badge](https://img.shields.io/badge/CREATE_REACT_APP-%20%20?style=flat&logo=CREATE%20REACT%20APP&logoColor=black&color=%20%2361DBFB) ![Static Badge](https://img.shields.io/badge/ASYNC%2FAWAIT-%20%20?style=flat&logo=JAVASCRIPT&logoColor=black&color=%23F0DB4F) ![Static Badge](https://img.shields.io/badge/API(AXIOS)-%20%20?style=flat&logo=JAVASCRIPT&logoColor=black&color=%23F0DB4F) ![Static Badge](https://img.shields.io/badge/ERROR_HANDLING-%20%20?style=flat&logo=JAVASCRIPT&logoColor=black&color=%23F0DB4F) ![Static Badge](https://img.shields.io/badge/NPM-%20%20?style=flat&logo=npm&color=%23CC3534) ![Static Badge](https://img.shields.io/badge/HTML-%20%20?style=flat&logo=HTML5&logoColor=white&color=%23e34c26) ![Static Badge](https://img.shields.io/badge/CSS-%20%20?style=flat&logo=css3&logoColor=white&color=%23264de4) ![Static Badge](https://img.shields.io/badge/FIGMA-%20?style=flat&logo=FIGMA&logoColor=white&color=%23A259FF)
+
+
+- **React**
+- **Redux**: React-Redux, Redux Toolkit  (createSlice, store, useSelector, useDispatch)
+- **Redux-Saga**: side effects handling
+- **Styled-components**: theme, ThemeProvider, GlobalStyle
+- **SVG** images as React components
+- **Create React App**
+- **npm**
+- **Webpack**
+- **Babel**
+- **HTML**
+- **CSS**: Media Queries, normalize.css, transition, Flex, Grid, alternative box model, keyframes animations
+- **JavaScript**: JS modules, arrays, objects, ternary operator, arrow functions, immutabililty
+- **JS Async**: asynchronous functions, async/await
+- **Axios**
+- Fetching from GitHub API
+- error handling: **try/catch**
+- **Figma**: The app was created based on design project in figma
 
 ## Available Scripts
 
