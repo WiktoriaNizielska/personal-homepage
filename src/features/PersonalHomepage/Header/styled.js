@@ -23,11 +23,12 @@ export const Wrapper = styled.header`
 `;
 
 export const Image = styled.img`
-  max-width: 384px;
+  max-width: 398px;
+border-radius: 50%;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}) {
-    width: 230px;
-    height: 230px;
+    /* width: 230px;
+    height: 230px; */
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
