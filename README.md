@@ -1,9 +1,12 @@
 # Personal Homepage
 
+![Page screen](./images/readme.gif)
 ## Description
 Welcome to my virtual CV! Personal homepage is an interactive web application built with React. It showcases my skills and projects. 
 
 Demo: https://wiktorianizielska.github.io/personal-homepage/
+
+
 
 ## Features
 - 👋 **Get to know me:** Section about me contains profile photo and description
