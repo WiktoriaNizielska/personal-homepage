@@ -3,7 +3,7 @@ import { Header } from "./Header";
 import { Projects } from "./Projects";
 import { fetchProjects, selectProjectsState } from "./Projects/portfolioSlice";
 import { useEffect } from "react";
-import { Container, Wrapper } from "./styled";
+import { Wrapper } from "./styled";
 import { Loading } from "./Projects/Loading";
 import { Error } from "./Projects/Error";
 
@@ -16,7 +16,7 @@ export const Portfolio = () => {
   }, [dispatch]);
 
   return (
-    <Container>
+    <>
       <Header></Header>
       {loading ? <Loading /> :
         error ? <Error /> :
@@ -30,6 +30,6 @@ export const Portfolio = () => {
             />))}
           </Wrapper>
       }
-    </Container>
+    </>
   )
 };
