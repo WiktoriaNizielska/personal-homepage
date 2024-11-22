@@ -1,8 +1,10 @@
 import axios from "axios";
+import { apiURL } from "./apiUrl";
+
 
 export const getRepositories = async () => {
   try {
-    const response = await axios.get("https://api.github.com/users/WiktoriaNizielska/repos");
+    const response = await axios.get(apiURL);
     return response.data;
   } catch (error) {
     console.error(error);
