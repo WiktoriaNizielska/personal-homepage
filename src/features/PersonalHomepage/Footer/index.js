@@ -19,7 +19,7 @@ export const Footer = () => (
       </Link>
       <Link
         title="Linkedin"
-        href="https://www.linkedin.com/in/wiktoria-nizielska-870633328/"
+        href="https://www.linkedin.com/in/wiktoria-nizielska"
         target="_blank"
         rel="noreferrer noopener">
         <Linkedin />
