@@ -1,5 +1,6 @@
 export const skills = [
   "React.js",
+  "TanStack Query",
   "Styled Components",
   "React Hooks",
   "Create React App",
