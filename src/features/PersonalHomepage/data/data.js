@@ -31,8 +31,9 @@ export const skills = [
 ];
 
 export const toLearn = [
-  "next.js",
-  "tailwind CSS",
-  "vite",
-  "TypeScript"
+  "Next.js",
+  "Tailwind CSS",
+  "Vite",
+  "TypeScript",
+  "Cypress",
 ];
