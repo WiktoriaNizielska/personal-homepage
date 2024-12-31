@@ -30,10 +30,13 @@ export const skills = [
   "GitHub: Pull requests and review",
 ];
 
-export const toLearn = [
-  "Next.js",
+export const currentlyLearning = [
   "Tailwind CSS",
   "Vite",
   "TypeScript",
+];
+
+export const toLearn = [
+  "Next.js",
   "Cypress",
 ];

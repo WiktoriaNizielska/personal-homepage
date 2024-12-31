@@ -1,5 +1,5 @@
 import { Wrapper } from "./Container/styled";
-import { skills, toLearn } from "./data/data";
+import { currentlyLearning, skills, toLearn } from "./data/data";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Portfolio } from "./Portfolio";
@@ -8,19 +8,21 @@ import { ThemeButton } from "./ThemeButton";
 
 export const PersonalHomepage = () => (
   <Wrapper>
-    <ThemeButton/>
+    <ThemeButton />
     <Header />
-    <Section
-      title="My skillset includes 🛠️"
+    <Section 
+      title="My skillset includes 🛠️" 
       skills={skills}
-    >
-    </Section>
+    ></Section>
     <Section
-      title="What I want to learn next 🚀"
+      title="I'm currently learning 📖"
+      skills={currentlyLearning}
+    ></Section>
+    <Section 
+      title="What I want to learn next 🚀" 
       skills={toLearn}
-    >
-    </Section>
-    <Portfolio/>
+    ></Section>
+    <Portfolio />
     <Footer />
   </Wrapper>
 );
