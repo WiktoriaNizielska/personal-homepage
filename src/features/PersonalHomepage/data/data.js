@@ -31,9 +31,9 @@ export const skills = [
 ];
 
 export const currentlyLearning = [
+  "TypeScript",
   "Tailwind CSS",
   "Vite",
-  "TypeScript",
 ];
 
 export const toLearn = [
