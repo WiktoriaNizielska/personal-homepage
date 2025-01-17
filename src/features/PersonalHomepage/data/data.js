@@ -39,4 +39,5 @@ export const currentlyLearning = [
 export const toLearn = [
   "Next.js",
   "Cypress",
+  "Sass",
 ];
