@@ -5,8 +5,10 @@ export const skills = [
   "React Hooks",
   "Create React App",
   "NPM",
-  "HTML",
   "JavaScript",
+  "Tailwind CSS",
+  "Vite",
+  "HTML",
   "CSS: Flex box",
   "CSS: Animations/Keyframes",
   "CSS: Media Queries",
@@ -32,8 +34,6 @@ export const skills = [
 
 export const currentlyLearning = [
   "TypeScript",
-  "Tailwind CSS",
-  "Vite",
 ];
 
 export const toLearn = [
